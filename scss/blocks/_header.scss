@@ -1,0 +1,31 @@
+.header {
+  background-color: var(--footer-bg);
+  background-image: url('./../images/headers/header-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 1440 / 1084;
+
+  @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+      background-image: url('./../images/headers/header-bg@2x.jpg');
+}
+}
+.contatiner {
+}
+.header__menu {
+}
+.header__logo {
+}
+.header__nav-list {
+}
+.header__nav-item {
+}
+.header__nav-link {
+}
+.cart {
+}
+.cart__img {
+}
+.cart__count {
+}
