@@ -1,0 +1,24 @@
+.nav {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.header__nav-list {
+  justify-self: center;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+}
+
+.header__nav-item {
+
+}
+
+.header__nav-link {
+
+}
