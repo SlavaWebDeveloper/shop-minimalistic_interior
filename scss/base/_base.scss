@@ -6,7 +6,11 @@ body {
   color: var(--text-color)
 }
 
-.contatiner {
+body {
+  padding-bottom: 50vh;
+}
+
+.container {
   max-width: 1310px;
   margin: 0 auto; 
   padding: 0 15px;
