@@ -128,7 +128,11 @@ body {
   color: var(--text-color);
 }
 
-.contatiner {
+body {
+  padding-bottom: 50vh;
+}
+
+.container {
   max-width: 1310px;
   margin: 0 auto;
   padding: 0 15px;
@@ -385,4 +389,225 @@ body {
 }
 .info-hint__radio-fake--gray {
   background-color: var(--ui-gray);
+}
+
+.benefits {
+  padding: 120px 0;
+}
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.benefits__title {
+  font-size: 42px;
+  font-weight: 700;
+  max-width: 260px;
+}
+
+.benefit__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.benefit__text {
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 1.85; /* 29.6px */
+  opacity: 0.8;
+}
+
+.products {
+  padding: 50px 0;
+  background-color: #F7F7F7;
+}
+
+.products__title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.products__tabs {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.products__slider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.products__link {
+  text-align: center;
+}
+
+.read-more {
+  display: inline-flex;
+  gap: 13px;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85; /* 25.9px */
+}
+.read-more::after {
+  content: url("./../images/icons/arrow-right.svg");
+  height: 24px;
+}
+.read-more--large {
+  font-size: 18px;
+}
+
+.tab-controls {
+  display: inline-flex;
+  padding: 6px;
+  align-items: center;
+  border-radius: 44px;
+  background: #EEE;
+}
+
+.tab-controls__btn {
+  height: 45px;
+  padding: 7px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  color: rgba(31, 31, 31, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.85; /* 33.3px */
+  transition: background-color 0.2s ease-in;
+}
+.tab-controls__btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.tab-controls__btn--active {
+  background-color: #FFF;
+}
+
+.product-card {
+  position: relative;
+  width: 268px;
+  font-family: var(--font-card);
+}
+
+.product-card__link {
+  position: absolute;
+  inset: 0;
+}
+
+.product-card__photo {
+  height: 240px;
+  background-color: #FAFAFA;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.product-card__image {
+  margin-top: -50px;
+}
+
+.product-card__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 202px;
+  padding: 14px 22px 28px;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+.product-card__category {
+  position: relative;
+  z-index: 3;
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.product-card__title {
+  color: var(--text-card-dark-blue);
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.product-card__rating {
+  display: inline-flex;
+  gap: 3px;
+}
+
+.product-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.product-card__price {
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+  color: var(--text-card-dark-blue);
+  font-size: 21px;
+  font-weight: 600;
+}
+.product-card__price::before {
+  content: attr(data-value);
+  font-size: 15px;
+}
+
+.product-card__btn {
+  position: relative;
+  z-index: 3;
+  width: 48px;
+  height: 48px;
+  background-color: var(--ui-dark-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  transition: opacity 0.2s ease-in;
+}
+.product-card__btn:hover {
+  opacity: 0.8;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  gap: 42px;
+}
+
+.slider__btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #FFF;
+  box-shadow: 0px 7.031px 19.531px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__btn--pref {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
 }/*# sourceMappingURL=main.css.map */
