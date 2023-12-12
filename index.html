@@ -28,18 +28,29 @@
 
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a href="#!" class="header__nav-link header__nav-link--dropdown">Furniture</a>
+              <a href="#!" class="header__nav-link header__nav-link--dropdown"
+                >Furniture</a
+              >
 
               <div class="header__nav-list__sub-nav">
                 <ul class="sub-nav">
-                  <li class="sub-nav__item"><a href="#!" class="sub-nav__link">All</a></li>  
-                  <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Chair</a></li>
-                  <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Beds</a></li>
-                  <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Sofa</a></li>
-                  <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Lamp</a></li>
+                  <li class="sub-nav__item">
+                    <a href="#!" class="sub-nav__link">All</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a href="#!" class="sub-nav__link">Chair</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a href="#!" class="sub-nav__link">Beds</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a href="#!" class="sub-nav__link">Sofa</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a href="#!" class="sub-nav__link">Lamp</a>
+                  </li>
                 </ul>
               </div>
-
             </li>
             <li class="header__nav-item">
               <a href="#!" class="header__nav-link">Shop</a>
@@ -56,6 +67,10 @@
             <img class="cart__img" src="./images/icons/cart.svg" alt="" />
             <div class="cart__count">0</div>
           </a>
+
+          <button id="open-mobile-nav-btn" class="header__nav-btn">
+            <img src="./images/icons/mobile-nav.svg" alt="Open navigation" />
+          </button>
         </nav>
 
         <div class="header__content">
@@ -67,20 +82,22 @@
             ease and speed
           </p>
 
-          <form class="header__search search-form" action="">
-            <input
-              class="search-form__input"
-              placeholder="Search furniture"
-              type="text"
-              autocomplete="off"
-            />
-            <button class="search-form__btn">
-              <img src="./images/icons/search.svg" alt="Search" />
-            </button>
-          </form>
+          <div class="header__search">
+            <form class="search-form">
+              <input
+                class="search-form__input"
+                placeholder="Search furniture"
+                type="text"
+                autocomplete="off"
+              />
+              <button class="search-form__btn">
+                <img src="./images/icons/search.svg" alt="Search" />
+              </button>
+            </form>
+          </div>
         </div>
 
-        <div class="header__dot-sofa">
+        <div class="header__dot header__dot--sofa">
           <button class="info-dot">
             <div class="info-dot__circle"></div>
             <div class="info-dot__radius"></div>
@@ -110,7 +127,7 @@
           </div>
         </div>
 
-        <div class="header__dot-vase">
+        <div class="header__dot header__dot--vase">
           <button class="info-dot">
             <div class="info-dot__circle"></div>
             <div class="info-dot__radius"></div>
@@ -140,7 +157,7 @@
           </div>
         </div>
 
-        <div class="header__dot-item">
+        <div class="header__dot header__dot--item">
           <button class="info-dot">
             <div class="info-dot__circle"></div>
             <div class="info-dot__radius"></div>
@@ -170,7 +187,7 @@
           </div>
         </div>
 
-        <div class="header__dot-wall">
+        <div class="header__dot header__dot--wall">
           <button class="info-dot">
             <div class="info-dot__circle"></div>
             <div class="info-dot__radius"></div>
@@ -202,10 +219,63 @@
       </div>
     </header>
 
+    <!-- Mobile Nav-->
+    <div id="mobile-nav" class="mobile__nav-wrapper">
+      <div class="mobile__nav-header">
+        <a href="#!" class="mobile__cart">
+          <div class="cart">
+            <img class="cart__img" src="./images/icons/cart.svg" alt="" />
+            <div class="cart__count">0</div>
+          </div>
+          Cart
+        </a>
+
+        <button id="close-mobile-nav-btn" class="mobile__nav-btn-close">
+          <img src="./images/icons/close.svg" alt="Close navigation" />
+        </button>
+      </div>
+
+      <ul class="mobile__nav-list">
+        <li class="mobile__nav-item">
+          <a href="#!" class="mobile__nav-link mobile__nav-link--dropdown"
+            >Furniture</a
+          >
+          <ul class="mobile__sub-nav">
+            <li class="mobile__sub-nav__item">
+              <a href="#!" class="mobile__sub-nav__link">All</a>
+            </li>
+            <li class="mobile__sub-nav__item">
+              <a href="#!" class="mobile__sub-nav__link">Chair</a>
+            </li>
+            <li class="mobile__sub-nav__item">
+              <a href="#!" class="mobile__sub-nav__link">Beds</a>
+            </li>
+            <li class="mobile__sub-nav__item">
+              <a href="#!" class="mobile__sub-nav__link">Sofa</a>
+            </li>
+            <li class="mobile__sub-nav__item">
+              <a href="#!" class="mobile__sub-nav__link">Lamp</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile__nav-item">
+          <a href="#!" class="mobile__nav-link">Shop</a>
+        </li>
+        <li class="mobile__nav-item">
+          <a href="#!" class="mobile__nav-link">About Us</a>
+        </li>
+        <li class="mobile__nav-item">
+          <a href="#!" class="mobile__nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+
     <section class="benefits">
       <div class="container">
         <div class="benefits__grid">
-          <h2 class="benefits__title">Why Choosing Us</h2>
+          <div class="benefits__title">
+            <h2 class="title-2">Why Choosing Us</h2>
+          </div>
 
           <div class="benefit">
             <h3 class="benefit__title">Luxury facilities</h3>
@@ -245,11 +315,20 @@
 
     <section class="products">
       <div class="container">
-        <h2 class="products__title">Best Selling Product</h2>
 
+        <div class="products__title">
+          <h2 class="title-2">Best Selling Product</h2>
+
+        </div>
+        
         <div class="products__tabs">
           <div class="tab-controls">
-            <button data-tab="All" class="tab-controls__btn tab-controls__btn--active">All</button>
+            <button
+              data-tab="All"
+              class="tab-controls__btn tab-controls__btn--active"
+            >
+              All
+            </button>
             <button data-tab="Chair" class="tab-controls__btn">Chair</button>
             <button data-tab="Beds" class="tab-controls__btn">Beds</button>
             <button data-tab="Sofa" class="tab-controls__btn">Sofa</button>
@@ -391,7 +470,7 @@
                     <img
                       class="product-card__image"
                       src="./images/products/chairs/chair-04.png"
-                      srcset="./images/products/chairs/chair-01@4x.png 2x"
+                      srcset="./images/products/chairs/chair-04@2x.png 2x"
                       alt="chair 4"
                     />
                   </div>
@@ -927,7 +1006,7 @@
                     <img
                       class="product-card__image"
                       src="./images/products/sofas/sofa-02.png"
-                      srcset="./images/products/sofas/sofa-02@2x.png 2x"
+                      srcset="./images/products/sofas/sofa-04@2x.png 2x"
                       alt="Cozy Couch"
                     />
                   </div>
@@ -1079,7 +1158,7 @@
                     <img
                       class="product-card__image"
                       src="./images/products/sofas/sofa-02.png"
-                      srcset="./images/products/sofas/sofa-02@2x.png 2x"
+                      srcset="./images/products/sofas/sofa-04@2x.png 2x"
                       alt="Serene Seat"
                     />
                   </div>
