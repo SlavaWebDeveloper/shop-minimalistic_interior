@@ -13,6 +13,10 @@
   justify-content: center;
   align-items: center;
   gap: 65px;
+
+  @include media-table() {
+    display: none;  
+  }
 }
 
 .header__nav-item {
@@ -55,4 +59,12 @@
 .header__nav-item:hover .header__nav-list__sub-nav {
   visibility: visible;
   transform: translate(0%, 0%);
+}
+
+.header__nav-btn {
+  display: none;
+
+  @include media-table() {
+    display: block;
+  }
 }
