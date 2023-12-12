@@ -6,20 +6,21 @@ body {
   color: var(--text-color)
 }
 
-body {
-  padding-bottom: 50vh;
-}
-
 .container {
   max-width: 1310px;
   margin: 0 auto; 
   padding: 0 15px;
 
   &--small {
-    max-width: 1094;
+    max-width: 1094px;
   }
 }
 
 .none {
   display: none !important;
+}
+
+.title-2 {
+  font-size: clamp(32px, 1.702rem + 1.49vw, 42px);
+  font-weight: 700;
 }
